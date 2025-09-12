@@ -1,0 +1,96 @@
+name: dbt-synthea
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12.0
+  - pip
+  # Core dependencies available via conda
+  - click>=8.1.7
+  - requests>=2.32.3
+  - pyyaml>=6.0.2
+  - jinja2>=3.1.6
+  - packaging>=24.1
+  - colorama>=0.4.6
+  - python-dateutil>=2.9.0
+  - pytz>=2024.2
+  - protobuf>=4.25.5
+  # Development tools
+  - black>=24.8.0
+  - pytest>=8.3.3
+  # Database drivers
+  - psycopg2>=2.9.9
+  # Pip dependencies for dbt-specific packages and other specialized packages
+  - pip:
+    # dbt core and adapters
+    - dbt-core==1.8.7
+    - dbt-duckdb==1.8.0
+    - dbt-postgres==1.8.0
+    - dbt-adapters==1.7.0
+    - dbt-common==1.10.0
+    - dbt-extractor==0.5.1
+    - dbt-semantic-interfaces==0.5.1
+    # Database engines
+    - duckdb==1.1.1
+    # Data processing
+    - agate==1.9.1
+    - daff==1.3.46
+    - networkx==3.3
+    - deepdiff==7.0.1
+    - mashumaro==3.13.1
+    - more-itertools==10.5.0
+    - ordered-set==4.1.0
+    # Development tools
+    - pre-commit==3.8.0
+    - sqlfluff==3.2.0
+    - sqlfluff-templater-dbt==3.2.0
+    - diff-cover==9.2.0
+    - jinja2-simple-tags==0.6.1
+    # Utilities
+    - logbook==1.5.3
+    - minimal-snowplow-tracker==0.0.2
+    - python-slugify==8.0.4
+    - pytimeparse==1.1.8
+    - parsedatetime==2.6
+    - tqdm>=4.66.5
+    - tblib==3.0.0
+    - text-unidecode==1.3
+    - chardet==5.2.0
+    - regex>=2024.9.11
+    # Validation and schema
+    - jsonschema>=4.23.0
+    - jsonschema-specifications>=2023.12.1
+    - pydantic>=2.9.2
+    - pydantic-core>=2.23.4
+    - annotated-types>=0.7.0
+    # Additional utilities
+    - attrs>=24.2.0
+    - babel>=2.16.0
+    - certifi>=2024.8.30
+    - cfgv>=3.4.0
+    - charset-normalizer>=3.3.2
+    - distlib>=0.3.8
+    - filelock>=3.16.1
+    - identify>=2.6.1
+    - idna>=3.10
+    - importlib-metadata>=6.11.0
+    - iniconfig>=2.0.0
+    - isodate>=0.6.1
+    - leather>=0.4.0
+    - markupsafe>=2.1.5
+    - msgpack>=1.1.0
+    - mypy-extensions>=1.0.0
+    - nodeenv>=1.9.1
+    - pathspec>=0.12.1
+    - platformdirs>=4.3.6
+    - pluggy>=1.5.0
+    - pygments>=2.18.0
+    - referencing>=0.35.1
+    - rpds-py>=0.20.0
+    - six>=1.16.0
+    - sqlparse>=0.5.1
+    - typing-extensions>=4.12.2
+    - urllib3>=2.2.3
+    - virtualenv>=20.26.6
+    - zipp>=3.20.2
+    - appdirs>=1.4.4

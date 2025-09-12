@@ -29,6 +29,14 @@ models:
       +materialized: table
       +docs:
         node_color: '#EB6622'
+    fhir:
+      +materialized: table
+      +docs:
+        node_color: '#28A745'
+    analytics:
+      +materialized: table
+      +docs:
+        node_color: '#FF6B35'
     staging:
       synthea:
         +materialized: view
